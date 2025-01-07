@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage with Cube Slider</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header and Menu */
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        nav .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav .menu li {
+            margin: 0 15px;
+        }
+
+        nav .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav .menu li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Slider Section */
+        .slider {
+            margin: 20px auto;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+        }
+
+        .cube {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* Makes the cube a square */
+            overflow: hidden;
+            background-color: #f4f4f4;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .cube:hover {
+            transform: scale(1.05);
+        }
+
+        .cube img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cube .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .cube:hover .overlay {
+            opacity: 1;
+        }
+
+        .cube .overlay a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider Section -->
+    <main>
+        <section class="slider">
+            <!-- Example Cubes -->
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 1">
+                <div class="overlay">
+                    <a href="#">Category 1</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 2">
+                <div class="overlay">
+                    <a href="#">Category 2</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 3">
+                <div class="overlay">
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 1">
+                <div class="overlay">
+                    <a href="#">Category 1</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 2">
+                <div class="overlay">
+                    <a href="#">Category 2</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 3">
+                <div class="overlay">
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 1">
+                <div class="overlay">
+                    <a href="#">Category 1</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 2">
+                <div class="overlay">
+                    <a href="#">Category 2</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 3">
+                <div class="overlay">
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 1">
+                <div class="overlay">
+                    <a href="#">Category 1</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 2">
+                <div class="overlay">
+                    <a href="#">Category 2</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 3">
+                <div class="overlay">
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 1">
+                <div class="overlay">
+                    <a href="#">Category 1</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 2">
+                <div class="overlay">
+                    <a href="#">Category 2</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 3">
+                <div class="overlay">
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 1">
+                <div class="overlay">
+                    <a href="#">Category 1</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 2">
+                <div class="overlay">
+                    <a href="#">Category 2</a>
+                </div>
+            </div>
+            <div class="cube">
+                <img src="https://via.placeholder.com/150" alt="Category 3">
+                <div class="overlay">
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+            <!-- Add more cubes here -->
+        </section>
+    </main>
+</body>
+</html>
